@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'RedisTestController@index')->name('redis.index');
+Route::get('/', function () {
+    return view('welcome');
+});
